@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="todo">TODO</string>
+    <string name="netflix">Netflix</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_to_netflix">New to Netflix? SignUp Now</string>
+</resources>

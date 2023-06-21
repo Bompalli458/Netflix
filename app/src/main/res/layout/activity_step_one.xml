@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StepOne">
+
+    <include
+        layout="@layout/toolbarstepone"
+        tools:ignore="IncludeLayoutParam,ResourceCycle" />
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="549dp"
+        android:layout_marginTop="00dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@layout/toolbarstepone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <include
+            layout="@layout/lockicon"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="100dp" />
+
+        <TextView
+            android:id="@+id/step1of3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Step 1 of 3"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:text="Choose Your Plan"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:src="@drawable/ic_baseline_check_24"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:src="@drawable/ic_baseline_check_24"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:src="@drawable/ic_baseline_check_24"
+                    />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="296dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:paddingTop="20dp"
+                        android:layout_height="68dp"
+                    android:text="No commitments,cancel at any time"
+                    android:textSize="18dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="#494242"
+                        />
+
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:text="Everything on Netflix for one low price"
+                        android:textSize="18dp"
+                        android:gravity="start"
+                        android:textColor="#494242"
+                        />
+
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:text="No adds and no extra fees"
+                        android:gravity="start"
+                        android:textSize="18dp"
+                        android:textColor="#494242"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/see_your_plans_button"
+            android:layout_width="340dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/red"
+            android:text="See Your Plans"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

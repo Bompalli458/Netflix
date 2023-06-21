@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".MainScreen.Main_Screen">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/netflixIconSwipeScreen"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/netflix_icon"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/privacytextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_toRightOf="@+id/netflixIconSwipeScreen"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="PRIVACY"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="InvalidId">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/helptextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_toRightOf="@+id/privacytextView"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="HELP"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="InvalidId">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/signintextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_toRightOf="@+id/helptextView"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="SIGN IN"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="InvalidId"></TextView>
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpagerSwipescreen"
+                android:layout_width="match_parent"
+                android:layout_height="516dp"
+                android:layout_marginTop="57dp"
+                android:layout_marginBottom="63dp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck">
+
+            </androidx.viewpager.widget.ViewPager>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sliderdots"
+            android:layout_width="340dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/viewpagerSwipescreen"
+            android:layout_marginBottom="95dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,NotSibling" />
+
+
+        <Button
+            android:id="@+id/getStarted"
+            android:layout_width="374dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/red"
+            android:text="GET STARTED"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
